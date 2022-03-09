@@ -1,5 +1,5 @@
 const sendForm = async (name, record, image) => {
-  let records = 1;
+  let records = 2;
   const res = await fetch(
     `http://localhost:3000/api/v1/images/${image.id}/scores/${name}/${records}`,
     { method: "post" }
