@@ -2,7 +2,7 @@ const gameFinish = require("./gameFinish");
 const tagFindCharacter = require("./tagFindCharacter");
 const clear = require("./clear");
 
-const findCharacter = (characters) => {
+const findCharacter = (timerF, characters) => {
   const mainImage = document.getElementsByClassName("main-picture")[0];
   let find = 0;
   mainImage.addEventListener("click", (e) => {
@@ -21,7 +21,7 @@ const findCharacter = (characters) => {
         tagFindCharacter(char.x_pos, char.y_pos, char.name);
         find++;
         if (find === characters.length) {
-          gameFinish();
+          gameFinish(timerF);
         }
       }
     });

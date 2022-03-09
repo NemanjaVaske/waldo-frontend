@@ -3,11 +3,11 @@ const letsPlay = require("./letsPlay");
 
 const home = async () => {
   clear();
+
   const content = document.getElementById("content");
   const fetchImages = async () => {
     const res = await fetch("http://localhost:3000/api/v1/images");
     const data = await res.json();
-    console.log(data);
     // create image
     data.forEach((image) => {
       const img = document.createElement("img");
