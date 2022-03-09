@@ -1,7 +1,10 @@
-const tagFindCharacter = (pos_x, pos_y) => {
+const tagFindCharacter = (pos_x, pos_y, charName) => {
   const mainImage = document.getElementsByClassName("picture-cover")[0];
   const tag = document.createElement("div");
-  console.log(mainImage);
+  const findCharacter = document.getElementById(`${charName}`);
+  findCharacter.style.border = "3px solid limegreen";
+  console.log(findCharacter);
+
   tag.classList.add("tag");
   tag.style.top = pos_y + 6 + "px";
   tag.style.left = pos_x - 10 + "px";
