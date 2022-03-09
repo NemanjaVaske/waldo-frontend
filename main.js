@@ -1,1 +1,1 @@
-console.log("hello");
+(()=>{var t={666:t=>{t.exports=()=>{const t=document.getElementById("content");(async()=>{const e=await fetch("http://localhost:3000/api/v1/images");(await e.json()).forEach((e=>{const s=document.createElement("img");s.classList.add("home-image"),s.setAttribute("src",`./assets/image/${e.url}`),t.appendChild(s)}))})()}}},e={};function s(a){var o=e[a];if(void 0!==o)return o.exports;var n=e[a]={exports:{}};return t[a](n,n.exports,s),n.exports}(()=>{const t=s(666);window.addEventListener("load",t)})()})();
