@@ -21,6 +21,10 @@
   display: flex;
   gap: 30px;
 }
+#timer {
+  display: flex;
+  align-items: center;
+}
 .characters > img {
   height: 100px;
   width: 100px;
