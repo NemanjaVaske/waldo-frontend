@@ -1,3 +1,5 @@
+const tagFindCharacter = require("./tagFindCharacter");
+
 const findCharacter = (characters) => {
   const mainImage = document.getElementsByClassName("main-picture")[0];
 
@@ -12,6 +14,8 @@ const findCharacter = (characters) => {
         char.y_pos - y >= -7
       ) {
         console.log("pronasli ste " + char.name);
+        //TODO dodati funkciju koja stavlja flag i oznacava kog smo pronasli
+        tagFindCharacter(char.x_pos, char.y_pos);
       }
     });
   });

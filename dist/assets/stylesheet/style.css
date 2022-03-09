@@ -24,8 +24,21 @@
   height: 100px;
   width: 100px;
 }
+.picture-cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
 .main-picture {
   margin-top: 20px;
   height: 600px;
   width: 1000px;
+  z-index: 0;
+}
+.picture-cover > div {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 4px solid rgb(7, 218, 7);
 }

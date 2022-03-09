@@ -2,6 +2,8 @@ const createPlayground = (pictureUrl) => {
   const content = document.getElementById("content");
   const characters = document.createElement("div");
   characters.classList.add("characters");
+  const pictureCover = document.createElement("div");
+  pictureCover.classList.add("picture-cover");
   const waldo = document.createElement("img");
   waldo.setAttribute("src", "./assets/image/waldo.jpg");
   characters.appendChild(waldo);
@@ -18,6 +20,7 @@ const createPlayground = (pictureUrl) => {
   const mainPic = document.createElement("img");
   mainPic.setAttribute("src", `./assets/image/${pictureUrl}`);
   mainPic.classList.add("main-picture");
-  content.appendChild(mainPic);
+  pictureCover.appendChild(mainPic);
+  content.appendChild(pictureCover);
 };
 module.exports = createPlayground;
