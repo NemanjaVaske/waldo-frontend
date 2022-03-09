@@ -12,7 +12,7 @@ const letsPlay = async (imageId) => {
     createPlayground(data.url);
     let timerF = setInterval(timer, 1000);
     //must pass timerF,once it finished to stop it
-    findCharacter(timerF, data.characters);
+    findCharacter(timerF, data);
   }
 };
 module.exports = letsPlay;

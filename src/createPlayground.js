@@ -2,7 +2,6 @@ const createPlayground = (pictureUrl) => {
   const content = document.getElementById("content");
   const time = document.createElement("span");
   time.setAttribute("id", "timer");
-
   const characters = document.createElement("div");
   characters.classList.add("characters");
   characters.appendChild(time);
