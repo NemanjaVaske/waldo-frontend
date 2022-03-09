@@ -16,3 +16,15 @@
   margin-top: 20px;
   cursor: pointer;
 }
+.characters {
+  display: flex;
+  gap: 30px;
+}
+.characters > img {
+  height: 100px;
+  width: 100px;
+}
+.main-picture {
+  height: 600px;
+  width: 1000px;
+}
