@@ -17,6 +17,7 @@
   cursor: pointer;
 }
 .characters {
+  margin: 5px;
   display: flex;
   gap: 30px;
 }
