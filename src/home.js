@@ -5,6 +5,10 @@ const home = async () => {
   clear();
 
   const content = document.getElementById("content");
+  const title = document.createElement("span");
+  title.classList.add("home-title");
+  title.textContent = "Lets play Where's Waldo! Choose your picture. ";
+  content.appendChild(title);
   const fetchImages = async () => {
     const res = await fetch(
       "https://quiet-fortress-06303.herokuapp.com/api/v1/images"

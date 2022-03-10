@@ -16,7 +16,6 @@ const findCharacter = (timerF, data) => {
         char.y_pos - y <= 7 &&
         char.y_pos - y >= -7
       ) {
-        //TODO dodati funkciju koja stavlja flag i oznacava kog smo pronasli
         tagFindCharacter(char.x_pos, char.y_pos, char.name);
         find++;
         if (find === data.characters.length) {
