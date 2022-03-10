@@ -6,7 +6,7 @@ const tagFindCharacter = (pos_x, pos_y, charName) => {
 
   tag.classList.add("tag");
   tag.style.top = pos_y + 6 + "px";
-  tag.style.left = pos_x - 10 + "px";
+  tag.style.left = pos_x - 12 + "px";
   mainImage.appendChild(tag);
 };
 module.exports = tagFindCharacter;
