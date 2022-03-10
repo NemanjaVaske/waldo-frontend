@@ -6,7 +6,9 @@ const home = async () => {
 
   const content = document.getElementById("content");
   const fetchImages = async () => {
-    const res = await fetch("http://localhost:3000/api/v1/images");
+    const res = await fetch(
+      "https://quiet-fortress-06303.herokuapp.com/api/v1/images"
+    );
     const data = await res.json();
     // create image
     data.forEach((image) => {

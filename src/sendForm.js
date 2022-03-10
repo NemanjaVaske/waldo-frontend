@@ -4,7 +4,7 @@ const sendForm = async (name, record, image) => {
   let sec = parseInt(records[1], 10);
   records = sec + min * 60;
   const res = await fetch(
-    `http://localhost:3000/api/v1/images/${image.id}/scores/${name}/${records}`,
+    `https://quiet-fortress-06303.herokuapp.com/api/v1/images/${image.id}/scores/${name}/${records}`,
     { method: "post" }
   );
   const data = await res.json();

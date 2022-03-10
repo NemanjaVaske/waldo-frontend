@@ -5,7 +5,9 @@ const timer = require("./timer");
 
 const letsPlay = async (imageId) => {
   if (imageId) {
-    const res = await fetch(`http://localhost:3000/api/v1/images/${imageId}`);
+    const res = await fetch(
+      `https://quiet-fortress-06303.herokuapp.com/api/v1/images/${imageId}`
+    );
     const data = await res.json();
     //removing all from content
     clear();
