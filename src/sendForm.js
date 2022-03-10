@@ -11,11 +11,12 @@ const sendForm = async (name, record, image) => {
   const data = await res.json();
   const content = document.getElementById("content");
   const list = document.createElement("ol");
+  list.textContent = "Best scores:";
   data.forEach((char) => {
     const listItem = document.createElement("li");
     let sec = char.seconds % 60;
     let min = char.seconds / 60;
-    listItem.innerHTML = char.name + " with score " + min.toFixed() + ":" + sec;
+    listItem.innerHTML = char.name + " with time " + min.toFixed() + ":" + sec;
     list.appendChild(listItem);
   });
   content.appendChild(list);

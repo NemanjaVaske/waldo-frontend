@@ -4,7 +4,7 @@ const scoreForm = (record, data) => {
   const content = document.getElementById("content");
   const formContainer = document.createElement("div");
   formContainer.innerHTML = `<form>
-  <p>Please enter your Name</p>
+  <p>You win! Please enter your Name</p>
   <label>Name:</label>
   <input type="text" id="name"  name="name"/>
   
