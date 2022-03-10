@@ -20,6 +20,12 @@ const sendForm = async (name, record, image) => {
     list.appendChild(listItem);
   });
   content.appendChild(list);
+  const btn = document.createElement("button");
+  btn.textContent = "Play Again!";
+  content.appendChild(btn);
+  btn.addEventListener("click", () => {
+    window.location.reload();
+  });
 };
 
 module.exports = sendForm;
