@@ -14,7 +14,6 @@ const scoreForm = (record, data) => {
   formContainer.addEventListener("submit", (e) => {
     e.preventDefault();
     sendForm(e.target.childNodes[5].value, record, data);
-    console.log();
   });
 };
 module.exports = scoreForm;

@@ -1,6 +1,5 @@
 const sendForm = async (name, record, image) => {
-  let records = 2;
-  records = record.split(":");
+  let records = record.split(":");
   let min = parseInt(records[0], 10);
   let sec = parseInt(records[1], 10);
   records = sec + min * 60;
@@ -16,7 +15,8 @@ const sendForm = async (name, record, image) => {
     const listItem = document.createElement("li");
     let sec = char.seconds % 60;
     let min = char.seconds / 60;
-    listItem.innerHTML = char.name + " with time " + min.toFixed() + ":" + sec;
+    listItem.innerHTML =
+      char.name + " with time " + Math.floor(min) + ":" + sec;
     list.appendChild(listItem);
   });
   content.appendChild(list);
