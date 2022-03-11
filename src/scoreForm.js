@@ -6,7 +6,7 @@ const scoreForm = (record, data) => {
   formContainer.innerHTML = `<form>
   <p>You win! Please enter your Name</p>
   <label>Name:</label>
-  <input type="text" id="name"  name="name"/>
+  <input type="text" id="name" required name="name"/>
   
   <input type="submit" value="Submit" />
 </form>`;
